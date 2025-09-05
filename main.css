@@ -1,0 +1,1118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*
+font-family: 'Abril Fatface', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Kanit', sans-serif;
+*/
+
+img,
+ion-icon {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+
+}
+
+em {
+    font-style: normal;
+    color: transparent;
+}
+
+
+/*------------------------------=SLIDER=--------------------------------*/
+
+
+.left-slider {
+    position: fixed;
+    left: 0px;
+    height: 100vh;
+    width: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.slider-line {
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    background: linear-gradient(90deg, #F4B400 37.4%, transparent 0% 62.6%, #4285F4 0%);
+    border-radius: 999px;
+    transform: translate(0.3px, -183.4px) rotate(45deg);
+}
+
+.slider-line div {
+    position: absolute;
+    rotate: 90deg;
+    width: 40px;
+    height: 10px;
+    background: linear-gradient(90deg, #DB4437 37.4%, transparent 0% 62.6%, #0F9D58 0%);
+    border-radius: 999px;
+}
+
+
+
+.left-slider img {
+    transform: rotate(90deg);
+    height: 30px;
+    filter: brightness(0);
+}
+
+
+/*------------------------------=INTRO=--------------------------------*/
+
+
+.one {
+    width: 100%;
+    height: 100vh;
+    background-color: #EDEAE6;
+    display: flex;
+    align-items: center;
+}
+
+.names {
+    position: absolute;
+    font-size: max(6vw, 20px);
+    rotate: 90deg;
+    top: 41vh;
+    right: -5%;
+    font-family: 'Abril Fatface', serif;
+    color: #DDD4CE;
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    width: 6vw;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0vw 0.1vw 0.3vw 0.1vw;
+
+}
+
+.one-header {
+    position: absolute;
+    width: 56%;
+    left: max(10%, 80px);
+    transform: translateY(-2vw);
+}
+
+.one-header p {
+    font-size: 8vw;
+    font-family: 'Abril Fatface', serif;
+    letter-spacing: -0.05rem;
+    line-height: 7.5vw;
+    color: black;
+}
+
+.one-header-black-square {
+    position: absolute;
+    width: 16vw;
+    height: 7vw;
+    top: 7.5vw;
+    background: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%);
+    padding-bottom: 0.7vw;
+    border-radius: 0px 3.8vw 0px 1.6vw;
+}
+
+.one-header-black-square p {
+    color: white;
+    margin-left: .6vw;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .1))
+}
+
+.one-img {
+    position: absolute;
+    transform: translateY(11vw);
+    left: 37%;
+    width: 16vw;
+    rotate: -50deg;
+    z-index: 100;
+    filter: brightness(0);
+}
+
+.google-adsense-logo {
+    position: absolute;
+    display: flex;
+    left: max(13%, 98px);
+    transform: translateY(12vw);
+}
+
+.google-adsense-logo p {
+    font-size: 3vw;
+    margin-right: 1vw;
+    font-family: 'Abril Fatface', serif;
+    letter-spacing: -0.05rem;
+    color: black;
+}
+
+.google-adsense-logo img {
+    height: 4vw;
+    object-fit: contain;
+}
+
+.ads-one {
+    position: absolute;
+    width: 21vw;
+    aspect-ratio: 4/3;
+    border-radius: 20px;
+    border: solid 10px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+    right: 13%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ads-one p {
+    width: 80%;
+    font-family: monospace;
+}
+
+/*------------------------------=STEP ONE=--------------------------------*/
+
+.step-one {
+    width: 100%;
+    height: 750px;
+    background-color: #EDEAE6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.step-one-container {
+    height: 601px;
+    width: min(100%, 1100px);
+    margin: 0px max(10%, 80px) 0px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.step-one-title {
+    height: 100%;
+    width: 50%;
+}
+
+.step-one-h {
+    position: relative;
+    font-size: min(90px, 10vw);
+    font-family: 'Abril Fatface', serif;
+    z-index: 10;
+}
+
+.step-one-google-design {
+    position: absolute;
+    font-size: min(90px, 10vw);
+    font-family: 'Abril Fatface', serif;
+    letter-spacing: -0.05rem;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    border-radius: 0px min(3.8vw, 50px) 0px 1.6vw;
+    background: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .1));
+    z-index: 11;
+    transform: translate(min(232px, 26vw))
+}
+
+.step-one-div-p {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 5px;
+    z-index: 10;
+}
+
+.step-one-p {
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    z-index: 10;
+}
+
+.step-one-ink {
+    position: absolute;
+    width: 500px;
+    transform: translate(-40px, -250px) rotateY(180deg);
+    z-index: auto;
+}
+
+.step-one-ad-one {
+    position: relative;
+    aspect-ratio: 4/3;
+    margin-top: 30px;
+    border: solid 10px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.step-one-ad-one p {
+    width: 80%;
+    font-family: monospace;
+}
+
+.step-one-img {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.step-one-img-one {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/step-one-img-one.png);
+    background-size: cover;
+    background-position: -60px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-one-img-two {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/step-one-img-two.png);
+    background-size: cover;
+    background-position: center;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-one-arrow {
+    position: absolute;
+    transform: translate(min(275px, 20vw), -50px) rotate(-50deg);
+    width: 150px;
+    z-index: 100;
+    filter: brightness(0) drop-shadow(-5px 10px 8px rgba(0, 0, 0, .3));
+}
+
+/*------------------------------=STEP TWO=--------------------------------*/
+
+.step-two {
+    width: 100%;
+    height: 1100px;
+    background-color: #EDEAE6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.step-two-container {
+    height: 630px;
+    width: min(100%, 1100px);
+    margin: 0px max(10%, 80px) 0px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.step-two-title {
+    height: 100%;
+    width: 50%;
+}
+
+.step-two-h {
+    position: relative;
+    font-size: min(90px, 10vw);
+    font-family: 'Abril Fatface', serif;
+    z-index: 10;
+}
+
+.step-two-google-design {
+    position: absolute;
+    font-size: min(90px, 10vw);
+    font-family: 'Abril Fatface', serif;
+    letter-spacing: -0.05rem;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    border-radius: 0px min(3.8vw, 50px) 0px 1.6vw;
+    background: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .1));
+    z-index: 11;
+    transform: translate(min(232px, 26vw))
+}
+
+.step-two-div-p {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 5px;
+    z-index: 10;
+}
+
+.step-two-p {
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    z-index: 10;
+}
+
+.step-two-ink {
+    position: absolute;
+    width: 500px;
+    transform: translate(-40px, -270px) rotateY(0deg);
+    z-index: auto;
+}
+
+.step-two-ad-one {
+    position: relative;
+    aspect-ratio: 4/3;
+    margin-top: 30px;
+    border: solid 10px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.step-two-ad-one p {
+    width: 80%;
+    font-family: monospace;
+}
+
+.step-two-img {
+    height: 100%;
+    width: 50%;
+    display: grid;
+    grid-gap: 40px;
+}
+
+.step-two-img-one {
+    width: 100%;
+    height: 100%;
+    align-self: flex-end;
+    box-sizing: border-box;
+    background: url(img/step-two-img-one.png);
+    background-size: 480px;
+    background-position: 0px 700px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-two-img-two {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/step-two-img-two.png);
+    background-size: 500px;
+    background-position: 0px 100px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-two-arrow {
+    position: absolute;
+    transform: translate(max(-275px, -20vw), -230px) rotate(-40deg) rotateY(180deg);
+    width: 150px;
+    z-index: 100;
+    filter: brightness(0) drop-shadow(-5px 10px 8px rgba(0, 0, 0, .3));
+}
+
+/*------------------------------=STEP THREE=--------------------------------*/
+
+.step-three {
+    width: 100%;
+    height: 1100px;
+    background-color: #EDEAE6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.step-three-container {
+    height: 660px;
+    width: min(100%, 1100px);
+    margin: 0px max(10%, 80px) 0px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.step-three-title {
+    height: 100%;
+    width: 50%;
+}
+
+.step-three-h {
+    position: relative;
+    font-size: min(90px, 10vw);
+    font-family: 'Abril Fatface', serif;
+    z-index: 10;
+}
+
+.step-three-google-design {
+    position: absolute;
+    font-size: min(90px, 10vw);
+    font-family: 'Abril Fatface', serif;
+    letter-spacing: -0.05rem;
+    font-size: 70px;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    border-radius: 0px min(3.8vw, 50px) 0px 1.6vw;
+    background: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .1));
+    z-index: 11;
+    transform: translate(min(232px, 26vw), 15px)
+}
+
+.step-three-div-p {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 5px;
+    z-index: 10;
+}
+
+.step-three-p {
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    z-index: 10;
+}
+
+.step-three-ink {
+    position: absolute;
+    width: 500px;
+    transform: translate(-40px, -300px) rotateY(180deg);
+    z-index: auto;
+}
+
+.step-three-ad-one {
+    position: relative;
+    aspect-ratio: 4/3;
+    margin-top: 30px;
+    border: solid 10px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.step-three-ad-one p {
+    width: 80%;
+    font-family: monospace;
+}
+
+.step-three-img {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.step-three-img-one {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/step-three-img-one.png);
+    background-size: cover;
+    background-position: 20px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-three-img-two {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 40px;
+}
+
+.step-three-img-two-one {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/step-three-img-two.png);
+    background-size: cover;
+    background-position: 20px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-three-img-two-two {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/step-three-img-three.png);
+    background-size: cover;
+    background-position: 80px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-three-arrow-one {
+    position: absolute;
+    transform: translate(min(300px, 22vw), -440px) rotate(50deg) rotateX(180deg);
+    width: 150px;
+    z-index: 100;
+    filter: brightness(0) drop-shadow(5px -10px 8px rgba(0, 0, 0, .3));
+}
+
+.step-three-arrow-two {
+    position: absolute;
+    transform: translate(min(440px, 32vw), -260px) rotate(-40deg) rotateY(180deg);
+    width: 150px;
+    z-index: 100;
+    filter: brightness(0) drop-shadow(-5px 10px 8px rgba(0, 0, 0, .3));
+}
+
+
+/*------------------------------=VERIFICATION STEPS=--------------------------------*/
+
+.verification-one {
+    height: 1290px;
+    width: 100%;
+    background-color: #EDEAE6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.verification-one-container {
+    height: 1090px;
+    width: min(100%, 1100px);
+    margin: 0px max(10%, 80px) 0px;
+}
+
+.verification-one-title {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.verification-one-h {
+    font-family: 'Abril Fatface', serif;
+    font-size: 50px;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.verification-one-img-step-one {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    column-gap: 40px;
+    margin-bottom: 40px;
+}
+
+.verification-one-div-p-step-one {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/ink-splatter.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#verification-ink {
+    background-image: url(img/ink-splatter-rotation.png);
+}
+
+.verification-one-p-step-one {
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    width: 80%;
+}
+
+.verification-one-img-one-step-one {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/verification-one-img-one.png);
+    background-size: cover;
+    background-position: 20px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.verification-one-img-two-step-one {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/verification-one-img-two.png);
+    background-size: cover;
+    background-position: 20px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.verification-one-img-three-step-one {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/verification-one-img-three.png);
+    background-size: cover;
+    background-position: 20px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+/*------------------------------=VERIFICATION STEP TWO=--------------------------------*/
+
+.verification-two {
+    height: 1290px;
+    width: 100%;
+    background-color: #EDEAE6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.verification-two-img-one-step-one {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/verification-two-img-one.png);
+    background-size: cover;
+    background-position: 20px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.verification-two-img-two-step-one {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/verification-two-img-two.png);
+    background-size: cover;
+    background-position: 40px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.verification-two-img-three-step-one {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/verification-two-img-three.png);
+    background-size: cover;
+    background-position: 20px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+/*------------------------------=VERIFICATION STEP THREE=--------------------------------*/
+
+.verification-three {
+    height: 950px;
+    width: 100%;
+    background-color: #EDEAE6;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.verification-three-container {
+    height: 750px;
+    width: min(100%, 1100px);
+    margin: 0px max(10%, 80px) 0px;
+}
+
+.verification-three-img-one-step-one {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/verification-three-img-one.png);
+    background-size: cover;
+    background-position: 20px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.verification-three-img-two-step-one {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/verification-three-img-two.png);
+    background-size: cover;
+    background-position: 20px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+/*------------------------------=STEP FOUR=--------------------------------*/
+
+.step-four {
+    width: 100%;
+    height: 1158px;
+    background-color: #EDEAE6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.step-four-container {
+    height: 688px;
+    width: min(100%, 1100px);
+    margin: 0px max(10%, 80px) 0px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.step-four-img-one {
+    width: 100%;
+    height: 100%;
+    align-self: flex-end;
+    box-sizing: border-box;
+    background: url(img/step-four-img-one.png);
+    background-size: cover;
+    background-position: 20px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-four-img-two {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/step-four-img-two.png);
+    background-size: cover;
+    background-position: 80px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-four-ink {
+    position: absolute;
+    width: 500px;
+    transform: translate(-40px, -340px) rotateY(0deg);
+    z-index: auto;
+}
+
+.step-four-arrow {
+    position: absolute;
+    transform: translate(max(-275px, -20vw), -270px) rotate(-40deg) rotateY(180deg);
+    width: 150px;
+    z-index: 100;
+    filter: brightness(0) drop-shadow(-5px 10px 8px rgba(0, 0, 0, .3));
+}
+
+/*------------------------------=STEP FIVE=--------------------------------*/
+
+.step-five {
+    width: 100%;
+    height: 1158px;
+    background-color: #EDEAE6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.step-five-container {
+    height: 691px;
+    width: min(100%, 1100px);
+    margin: 0px max(10%, 80px) 0px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.step-five-img-one {
+    width: 100%;
+    height: 100%;
+    align-self: flex-end;
+    box-sizing: border-box;
+    background: url(img/step-five-img-one.png);
+    background-size: cover;
+    background-position: 30px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-five-img-two {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/step-five-img-two.png);
+    background-size: cover;
+    background-position: 80px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-five-ink {
+    position: absolute;
+    width: 500px;
+    transform: translate(-40px, -340px) rotateY(180deg);
+    z-index: auto;
+}
+
+.step-five-arrow {
+    position: absolute;
+    transform: translate(min(450px, 34vw), -270px) rotate(-40deg) rotateY(180deg);
+    width: 150px;
+    z-index: 100;
+    filter: brightness(0) drop-shadow(-5px 10px 8px rgba(0, 0, 0, .3));
+}
+
+/*------------------------------=STEP SIX=--------------------------------*/
+
+.step-six {
+    width: 100%;
+    height: 1100px;
+    background-color: #EDEAE6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.step-six-container {
+    height: 661px;
+    width: min(100%, 1100px);
+    margin: 0px max(10%, 80px) 0px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.step-six-google-design {
+    position: absolute;
+    font-size: min(90px, 10vw);
+    font-family: 'Abril Fatface', serif;
+    letter-spacing: -0.05rem;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    border-radius: 0px min(3.8vw, 50px) 0px 1.6vw;
+    background: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .1));
+    z-index: 11;
+    transform: translate(min(232px, 26vw))
+}
+
+.step-six-img {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.step-six-img-one {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/step-six-img-one.png);
+    background-size: cover;
+    background-position: -20px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-six-img-two {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 40px;
+}
+
+.step-six-img-two-one {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/step-six-img-two-one.png);
+    background-size: cover;
+    background-position: 20px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-six-img-two-two {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/step-six-img-two-two.png);
+    background-size: cover;
+    background-position: 80px 0px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-six-ink {
+    position: absolute;
+    width: 500px;
+    transform: translate(-40px, -310px) rotateY(180deg);
+    z-index: auto;
+}
+
+.step-six-arrow-one {
+    position: absolute;
+    transform: translate(max(-300px, -22vw), -90px) rotate(-50deg) rotateX(0deg);
+    width: 150px;
+    z-index: 100;
+    filter: brightness(0) drop-shadow(-5px 10px 8px rgba(0, 0, 0, .3));
+}
+
+.step-six-arrow-two {
+    position: absolute;
+    transform: translate(max(-440px, -32vw), -260px) rotate(40deg) rotateY(0deg);
+    width: 150px;
+    z-index: 100;
+    filter: brightness(0) drop-shadow(5px -10px 8px rgba(0, 0, 0, .3));
+}
+
+/*------------------------------=STEP SEVEN=--------------------------------*/
+
+.step-seven {
+    width: 100%;
+    height: 1158px;
+    background-color: #EDEAE6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.step-seven-container {
+    height: 691px;
+    width: min(100%, 1100px);
+    margin: 0px max(10%, 80px) 0px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.step-seven-google-design {
+    position: absolute;
+    font-size: min(90px, 10vw);
+    font-family: 'Abril Fatface', serif;
+    letter-spacing: -0.05rem;
+    font-size: 70px;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    border-radius: 0px min(3.8vw, 50px) 0px 1.6vw;
+    background: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .1));
+    z-index: 11;
+    transform: translate(min(232px, 26vw), 15px)
+}
+
+.step-seven-img-one {
+    width: 100%;
+    height: 100%;
+    align-self: flex-end;
+    box-sizing: border-box;
+    background: url(img/step-seven-img-one.png);
+    background-size: cover;
+    background-position: 0px 80px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-seven-img-two {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(img/step-seven-img-two.png);
+    background-size: cover;
+    background-position: 0px 150px;
+    border: solid 6px;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-seven-ink {
+    position: absolute;
+    width: 500px;
+    transform: translate(-40px, -340px) rotateY(180deg);
+    z-index: auto;
+}
+
+.step-seven-arrow {
+    position: absolute;
+    transform: translate(min(450px, 34vw), -270px) rotate(-40deg) rotateY(180deg);
+    width: 150px;
+    z-index: 100;
+    filter: brightness(0) drop-shadow(-5px 10px 8px rgba(0, 0, 0, .3));
+}
+
+/*------------------------------=STEP EIGHT=--------------------------------*/
+
+.step-eight {
+    width: 100%;
+    height: 1100px;
+    background-color: #EDEAE6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.step-eight-container {
+    height: 661px;
+    width: min(100%, 1100px);
+    margin: 0px max(10%, 80px) 0px;
+}
+
+.step-eight-title {
+    position: relative;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.step-eight-h {
+    font-family: 'Abril Fatface', serif;
+    font-size: 100px;
+    border-bottom: 9px solid;
+    border-image: linear-gradient(45deg, #4285F4 25%, #DB4437 25% 50%, #F4B400 50% 75%, #0F9D58 75%) 10;
+}
+
+.step-eight-img {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.step-eight-div-p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/ink-splatter.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.step-eight-p {
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    width: 50%;
+}
+
+/*------------------------------=BACK TO TOP=--------------------------------*/
